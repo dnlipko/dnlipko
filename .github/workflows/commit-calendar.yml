@@ -14,15 +14,17 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.calendar.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           plugin_calendar: yes
+          commits_authoring: Dmitrii Lipko, dmitrii.lipko, dmitrii.lipko@tiqets.com
           
       - name: Full history calendar
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.calendar.full.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           plugin_calendar: yes
-          plugin_calendar_limit: 0 
+          plugin_calendar_limit: 0
+          commits_authoring: Dmitrii Lipko, dmitrii.lipko, dmitrii.lipko@tiqets.com 
